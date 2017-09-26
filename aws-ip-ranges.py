@@ -6,6 +6,6 @@ response = requests.get(url)
 jsonObject = json.loads(response.content)
 
 for item in jsonObject["prefixes"]:
-    print item["ip_prefix"], item["region"]
+    print item["ip_prefix"], item["region"], item["service"]
 
 #    print item["ip_prefix"], item["region"]
